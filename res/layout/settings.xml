@@ -1,0 +1,81 @@
+<TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+	<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/textViewCity"
+        android:text="City:"
+        android:padding="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/editText1"
+		android:textAppearance="?android:attr/textAppearanceMedium" >
+     <requestFocus />
+    </EditText>
+	</TableRow>
+    
+	
+	<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">	
+	<TextView
+        android:id="@+id/textviewBaseFare"
+        android:text="Base fare:"
+        android:padding="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText2"
+		android:textSize="20dip"
+        android:inputType="numberDecimal" />
+	</TableRow>
+	
+	<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">	
+    <TextView
+        android:id="@+id/textViewBaseKm"
+        android:text="Base Km:"
+        android:padding="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:textSize="20dip"
+        android:inputType="numberDecimal" />
+	</TableRow>
+	
+	<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/textViewPerKm"
+        android:text="/km Rate:"
+        android:padding="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:textSize="20dip"
+        android:inputType="numberDecimal" />
+	</TableRow>
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dip"
+        android:text="Save" />
+
+</TableLayout>
